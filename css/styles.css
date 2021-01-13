@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+}
+html{
+    font-size:1vw;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    z-index: -99;
+    background-color: #131313;
+    display: flex;
+}
+h1,h2{
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+button{
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+}
+button:hover{
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    padding: 1rem 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+}
+header>h2{
+    
+    text-transform: uppercase;
+    margin:0 5rem;
+}
+header>a{
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+header>button{
+    padding: 0.8rem 2rem;
+    margin-right:  5rem;
+}
+ul{
+    margin: 0;
+}
+header li{
+    font-size: 0.8rem;
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    margin-left: 3rem;
+}
+.class1{
+    background: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: 4.5vw;
+    padding: 13rem 50rem 0 8rem;
+}
+.class1>h1{
+    display: inline;
+    text-transform: uppercase;
+    font-size: 2.7rem;
+}
+.class1>p{
+    margin:2rem  0 0;
+    font-size: 1.8rem;
+}
+.class1>button{
+    font-size: 0.8rem;
+    padding: 1.5rem 2.7rem;
+    font-style: italic;
+    margin: 2rem 2rem 0 0;
+}
+.intro-img{
+    margin: -13rem 0 0 -8rem;
+    position: absolute;
+    filter: brightness(30%);
+    width: 100%;
+    z-index: -1;
+}
+.intro-img-mobile{
+    display: none;
+}
+#mobile-intro{
+    display: none;
+}
+.gold-button{
+    border: none;
+    outline: none;
+    background: #E3B873;
+    box-shadow: 0px 0.5rem 2rem rgba(227, 184, 115, 0.2);
+}
+.white-button{
+    outline: none;
+    background: none;
+    border: white solid 0.1rem;
+    padding: 1.4rem 2.6rem!important;
+}
+.white-letter{
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+.gold-letter{
+    color: #E3B873;
+    font-size: 0.8rem;
+}
+.nunito-italic{
+    font-style: italic;
+}
+.yeseva{
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (max-width:1200px){
+    header{
+        justify-content: space-between;
+        padding: 5rem 4rem;
+    }
+    header>a{
+        margin: 0;
+        text-decoration: none;
+        color: white !important;
+    }
+    header>h2{
+        margin: 0;
+    }
+    header>ul{
+        display: none;
+    }
+    header>button{
+        display: none;
+    }
+    .class1{
+        margin-top: 14.8rem;
+        overflow: hidden;
+        padding: 22.5rem 0 16rem 5rem;
+    }
+    .intro-img{
+        display: none;
+    }
+    .intro-img-mobile{
+    display: block;
+    position: absolute;
+    filter: brightness(30%);
+    width: 100%;
+    z-index: -1;
+    margin: -22.5rem 0 -16rem -5rem;
+    }
+    .class1>h1{
+        font-size: 7rem;
+
+    }
+    .class1>p{
+        font-size: 4rem;
+    }
+    .class1>button{
+        width: 95%;
+        margin: 10rem 0 7rem;
+        font-size: 3rem;
+        padding: 5rem 0;
+        text-align: center;
+    }
+    #mobile-intro{
+        margin: 0;
+        padding: 4.9rem 0 !important;
+        display: inline-block;
+        outline: none;
+        background: none;
+        border: white solid 0.4rem;
+    }
+    .white-button{
+        display: none;
+    }
+    .white-letter{
+        color: #ffffff;
+        font-size: 3.5rem;
+    }
+    .gold-letter{
+        color: #E3B873;
+        font-size: 3.5rem;
+    }
+}
