@@ -14,7 +14,7 @@ html{
 body{
     z-index: -99;
     background-color: #131313;
-    display: flex;
+
 }
 h1,h2{
     font-family: 'Yeseva One', cursive;
@@ -67,10 +67,9 @@ header li{
 }
 .class1{
     background: none;
-    display: inline-block;
+    display: block;
     width: 100%;
     position: relative;
-    margin-top: 4.5vw;
     padding: 13rem 50rem 0 8rem;
 }
 .class1>h1{
@@ -150,7 +149,6 @@ header li{
         display: none;
     }
     .class1{
-        margin-top: 14.8rem;
         overflow: hidden;
         padding: 22.5rem 0 16rem 5rem;
     }
