@@ -10,24 +10,28 @@ html{
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
-}
+}   
 body{
     z-index: -99;
     background-color: #131313;
-
 }
-h1,h2{
+h1,h2,h3{
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
     color:inherit;
 }
 button{
+    outline: none;
     border-radius: 0.2rem;
     text-transform: uppercase;
+}
+img{
+    width: 100%;
 }
 button:hover{
     cursor: pointer;
@@ -41,10 +45,9 @@ header{
     z-index: 100;
     align-items: center;
     justify-content: space-between;
+    font-size: 0.7rem !important;
 }
 header>h2{
-    
-    text-transform: uppercase;
     margin:0 5rem;
 }
 header>a{
@@ -54,34 +57,34 @@ header>a{
 header>button{
     padding: 0.8rem 2rem;
     margin-right:  5rem;
+    font-size: 0.8rem ;
 }
 ul{
     margin: 0;
+    list-style: none;
 }
 header li{
-    font-size: 0.8rem;
     display: inline-block;
-    list-style: none;
     color: #fff;
     margin-left: 3rem;
+    font-size: 0.8rem;
 }
-.class1{
+.intro{
     background: none;
     display: block;
     width: 100%;
     position: relative;
     padding: 13rem 50rem 0 8rem;
 }
-.class1>h1{
+.intro>h1{
     display: inline;
-    text-transform: uppercase;
     font-size: 2.7rem;
 }
-.class1>p{
+.intro>p{
     margin:2rem  0 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
-.class1>button{
+.intro>button{
     font-size: 0.8rem;
     padding: 1.5rem 2.7rem;
     font-style: italic;
@@ -91,7 +94,6 @@ header li{
     margin: -13rem 0 0 -8rem;
     position: absolute;
     filter: brightness(30%);
-    width: 100%;
     z-index: -1;
 }
 .intro-img-mobile{
@@ -100,25 +102,153 @@ header li{
 #mobile-intro{
     display: none;
 }
+.completed-projects{
+    display: flex;
+    padding: 7.5rem 9.3rem 0;
+    margin: 17rem 0 30rem ;
+}
+.completed-projects-left{
+    display: inline-grid;
+    margin-right: 4rem;
+    width: 70%;
+    grid-template-rows: 1fr 1.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.completed-projects-left>h2{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+.completed-projects-left>p{
+    font-size: 1rem;
+    line-height: 2rem;
+
+}
+.completed-projects-left-elem{
+    margin-top: 1.5rem;
+}
+.completed-projects-left-elem>h3{
+    margin-bottom: 0.6rem;
+}
+.nav-buttons{
+    grid-column:1/3;
+    display:flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+.nav-buttons a{
+    margin: 0 1.5rem;
+    width: 3rem;
+}
+.nav-buttons>img{
+    margin: 0 0.6rem;
+    opacity: 0.3;
+    width: 0.7rem;
+}
+#active{
+    opacity: 1;
+}
+.completed-projects-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.completed-projects-right>ul{
+    margin-bottom: 3.6rem;
+}
+.completed-projects-right li{
+    text-transform: uppercase;
+    display: inline;
+    margin: 0 2.5rem 0 0;
+}
+
+.online-control-container{
+    position: relative;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 21rem;
+    padding-bottom: 0;
+    width: 100%;
+}
+.online-control-upper-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 0 21rem;
+    top: -21rem;
+    width: 100%;
+}
+.online-control-container>h2{
+    display: block;
+}
+.online-control-container>img{
+    width: 4rem;
+}
+.online-control-container>p{
+    margin: 2.5rem 0 0 0;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
+.online-control-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem;
+    height: max-content;
+    width: 100%;
+}
+.online-control-icons>img{
+    width: 2.4rem;
+}
+#online-control-icon{
+    margin: 0 1rem;
+}
+.online-control-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.online-control-img>img{
+    filter: brightness(0.2);
+}
+#play-button{
+    width: 10rem;
+    filter: brightness(1);
+    position: absolute;
+}
+.active{
+    padding-bottom: 0.5rem;
+    border-bottom:0.1rem solid rgba(227, 184, 115, 1);
+    color:  rgba(227, 184, 115, 1);
+}
+.inactive{
+    color: rgba(255, 255, 255, 0.3);
+}
+.col-2{
+    grid-column: 1/3;
+}
 .gold-button{
     border: none;
-    outline: none;
     background: #E3B873;
     box-shadow: 0px 0.5rem 2rem rgba(227, 184, 115, 0.2);
 }
 .white-button{
-    outline: none;
     background: none;
     border: white solid 0.1rem;
     padding: 1.4rem 2.6rem!important;
 }
 .white-letter{
     color: #ffffff;
-    font-size: 0.8rem;
 }
 .gold-letter{
     color: #E3B873;
-    font-size: 0.8rem;
 }
 .nunito-italic{
     font-style: italic;
@@ -148,7 +278,7 @@ header li{
     header>button{
         display: none;
     }
-    .class1{
+    .intro{
         overflow: hidden;
         padding: 22.5rem 0 16rem 5rem;
     }
@@ -163,14 +293,14 @@ header li{
     z-index: -1;
     margin: -22.5rem 0 -16rem -5rem;
     }
-    .class1>h1{
+    .intro>h1{
         font-size: 7rem;
 
     }
-    .class1>p{
+    .intro>p{
         font-size: 4rem;
     }
-    .class1>button{
+    .intro>button{
         width: 95%;
         margin: 10rem 0 7rem;
         font-size: 3rem;
@@ -181,7 +311,6 @@ header li{
         margin: 0;
         padding: 4.9rem 0 !important;
         display: inline-block;
-        outline: none;
         background: none;
         border: white solid 0.4rem;
     }
